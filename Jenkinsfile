@@ -36,6 +36,7 @@ pipeline {
 
       steps {
         echo "Need to implemtent 'Deploy' stage."
+        sh 'firebase deploy --only hosting --token "$FIREBASE_TOKEN"'
       }
     }
   }
